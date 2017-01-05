@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Digestive System | Zoonk</title>
+		<meta name="description" content="Experience VR inside the human body with a simple experiment using WebVR/A-Frame." />
+		<script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
+	</head>
+	<body>
+		<a-scene>
+			<a-assets>
+				<img id="skin" src="assets/skin.png">
+				<a-asset-item id="platform-obj" src="assets/platform.obj"></a-asset-item>
+				<a-asset-item id="platform-mtl" src="assets/platform.mtl"></a-asset-item>
+			</a-assets>
+
+			<a-sky src="#skin" repeat="10 5"></a-sky>
+
+			<a-entity obj-model="obj: #platform-obj; mtl: #platform-mtl" scale="2 2 2" position="0 -2 4.15"></a-entity>
+		</a-scene>
+	</body>
+</html>
